@@ -1,19 +1,18 @@
 (English version at the end)
 
-# 📊 Predição de Avaliação do Cliente - Olist E-commerce
+📊 Predição de Avaliação do Cliente - Olist E-commerce
 
 Este projeto usa dados reais do Olist para prever a avaliação (`review_score`) que um cliente dará a um pedido, explorando informações da compra, entrega e produto para treinar modelos de Machine Learning. Essa análise pode ajudar marketplaces a anteciparem problemas e otimizarem a experiência do consumidor.
 
-## 🚀 **Objetivo**
+🚀 Objetivo
 
 Construir um modelo de classificação para prever a avaliação do cliente (`review_score`) em três categorias:
-- **Ruim** (1 ou 2 estrelas)
-- **Neutra** (3 estrelas)
-- **Boa** (4 ou 5 estrelas)
+- Ruim (1 ou 2 estrelas)
+- Neutra (3 estrelas)
+- Boa (4 ou 5 estrelas)
 
-## 🗂 **Estrutura do Projeto**
+🗂 Estrutura do Projeto
 
-```
 .
 ├── main.ipynb                    # Notebook principal do projeto
 ├── data/                          # Diretório dos datasets
@@ -30,36 +29,36 @@ Construir um modelo de classificação para prever a avaliação do cliente (`re
 └── README.md                      # Documento explicativo do projeto
 ```
 
-## ⚡ **Etapas Principais**
+⚡ Etapas Principais
 
-1. **Exploração e tratamento dos dados**
+1. Exploração e tratamento dos dados
    - Carregamento dos datasets principais
    - Análise e limpeza de valores nulos
    - Conversão de colunas de data
 
-2. **Engenharia de atributos**
+2. Engenharia de atributos
    - Tempo de entrega real vs. estimado
    - Número de produtos por pedido
    - Valor total do pedido
    - Categoria do produto
 
-3. **Modelagem e treino**
+3. Modelagem e treino
    - Transformação da variável alvo (`review_score`)
    - Separação dos dados em treino e teste
    - Treinamento de modelos de classificação (Random Forest, Decision Tree, Logistic Regression)
    - Avaliação de desempenho com métricas (Acurácia, F1-score, matriz de confusão)
 
-4. **Conclusões**
+4. Conclusões
    - Interpretação dos resultados do modelo
    - Visualização das features mais importantes
    - Possíveis otimizações futuras
 
-## 💻 **Como Executar o Projeto**
+💻 Como Executar o Projeto
 
 1. Instale as dependências:
-   ```sh
+
    pip install pandas scikit-learn imbalanced-learn matplotlib seaborn
-   ```
+
 
 2. Abra o arquivo [`main.ipynb`](main.ipynb) no VS Code ou Jupyter Notebook.
 
@@ -68,12 +67,12 @@ Construir um modelo de classificação para prever a avaliação do cliente (`re
    - Treinar os modelos
    - Analisar os resultados
 
-## 📌 **Observações**
+📌 Observações
 - Os dados estão no diretório `data/` e podem ser acessados no notebook.
 - O modelo final foi salvo como `modelo_treinado.pkl` e pode ser carregado diretamente.
 - O projeto pode ser expandido para prever tendências de mercado ou analisar fatores mais profundos que influenciam as avaliações.
 
-## 🏆 **Créditos**
+🏆 Créditos
 Este projeto usa o dataset público do Olist e foi desenvolvido como um estudo de Data Science para e-commerce. 
 Link do dataset = https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce
 
