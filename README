@@ -1,0 +1,170 @@
+(English version at the end)
+
+# 📊 Predição de Avaliação do Cliente - Olist E-commerce
+
+Este projeto usa dados reais do Olist para prever a avaliação (`review_score`) que um cliente dará a um pedido, explorando informações da compra, entrega e produto para treinar modelos de Machine Learning. Essa análise pode ajudar marketplaces a anteciparem problemas e otimizarem a experiência do consumidor.
+
+## 🚀 **Objetivo**
+
+Construir um modelo de classificação para prever a avaliação do cliente (`review_score`) em três categorias:
+- **Ruim** (1 ou 2 estrelas)
+- **Neutra** (3 estrelas)
+- **Boa** (4 ou 5 estrelas)
+
+## 🗂 **Estrutura do Projeto**
+
+```
+.
+├── main.ipynb                    # Notebook principal do projeto
+├── data/                          # Diretório dos datasets
+│   ├── olist_orders_dataset.csv
+│   ├── olist_order_reviews_dataset.csv
+│   ├── olist_order_items_dataset.csv
+│   ├── olist_products_dataset.csv
+│   ├── olist_customers_dataset.csv
+│   ├── olist_geolocation_dataset.csv
+│   ├── olist_order_payments_dataset.csv
+│   ├── olist_sellers_dataset.csv
+│   └── product_category_name_translation.csv
+├── storytelling.txt               # Documento com o contexto do desafio
+└── README.md                      # Documento explicativo do projeto
+```
+
+## ⚡ **Etapas Principais**
+
+1. **Exploração e tratamento dos dados**
+   - Carregamento dos datasets principais
+   - Análise e limpeza de valores nulos
+   - Conversão de colunas de data
+
+2. **Engenharia de atributos**
+   - Tempo de entrega real vs. estimado
+   - Número de produtos por pedido
+   - Valor total do pedido
+   - Categoria do produto
+
+3. **Modelagem e treino**
+   - Transformação da variável alvo (`review_score`)
+   - Separação dos dados em treino e teste
+   - Treinamento de modelos de classificação (Random Forest, Decision Tree, Logistic Regression)
+   - Avaliação de desempenho com métricas (Acurácia, F1-score, matriz de confusão)
+
+4. **Conclusões**
+   - Interpretação dos resultados do modelo
+   - Visualização das features mais importantes
+   - Possíveis otimizações futuras
+
+## 💻 **Como Executar o Projeto**
+
+1. Instale as dependências:
+   ```sh
+   pip install pandas scikit-learn imbalanced-learn matplotlib seaborn
+   ```
+
+2. Abra o arquivo [`main.ipynb`](main.ipynb) no VS Code ou Jupyter Notebook.
+
+3. Execute as células sequencialmente para:
+   - Carregar e preparar os dados
+   - Treinar os modelos
+   - Analisar os resultados
+
+## 📌 **Observações**
+- Os dados estão no diretório `data/` e podem ser acessados no notebook.
+- O modelo final foi salvo como `modelo_treinado.pkl` e pode ser carregado diretamente.
+- O projeto pode ser expandido para prever tendências de mercado ou analisar fatores mais profundos que influenciam as avaliações.
+
+## 🏆 **Créditos**
+Este projeto usa o dataset público do Olist e foi desenvolvido como um estudo de Data Science para e-commerce. 
+Link do dataset = https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce
+
+-----------------------------------------------
+
+In English:
+📊 Customer Review Prediction - Olist E-commerce
+This project leverages real data from Olist to predict the review score (review_score) that a customer will give to an order, analyzing purchase, delivery, and product details to train Machine Learning models. This analysis can help marketplaces anticipate issues and optimize customer experience.
+
+🚀 Objective
+Build a classification model to predict the customer review (review_score) in three categories:
+
+Bad (1 or 2 stars)
+
+Neutral (3 stars)
+
+Good (4 or 5 stars)
+
+🗂 Project Structure
+.
+├── main.ipynb                    # Main project notebook
+├── data/                          # Dataset directory
+│   ├── olist_orders_dataset.csv
+│   ├── olist_order_reviews_dataset.csv
+│   ├── olist_order_items_dataset.csv
+│   ├── olist_products_dataset.csv
+│   ├── olist_customers_dataset.csv
+│   ├── olist_geolocation_dataset.csv
+│   ├── olist_order_payments_dataset.csv
+│   ├── olist_sellers_dataset.csv
+│   └── product_category_name_translation.csv
+├── storytelling.txt               # Document with challenge context
+└── README.md                      # Project documentation
+⚡ Main Steps
+Data Exploration & Preprocessing
+
+Load the main datasets
+
+Analyze and clean missing values
+
+Convert date columns
+
+Feature Engineering
+
+Real vs. estimated delivery time
+
+Number of products per order
+
+Total order value
+
+Main product category
+
+Modeling & Training
+
+Transform the target variable (review_score)
+
+Split data into training and testing sets
+
+Train classification models (Random Forest, Decision Tree, Logistic Regression)
+
+Evaluate model performance using metrics (Accuracy, F1-score, Confusion Matrix)
+
+Conclusions
+
+Interpretation of model results
+
+Feature importance visualization
+
+Potential future optimizations
+
+💻 How to Run the Project
+Install dependencies:
+
+sh
+pip install pandas scikit-learn imbalanced-learn matplotlib seaborn
+Open main.ipynb in VS Code or Jupyter Notebook.
+
+Run the cells sequentially to:
+
+Load and prepare data
+
+Train models
+
+Analyze results
+
+📌 Notes
+The dataset files are located in the data/ directory and can be accessed in the notebook.
+
+The final trained model is saved as trained_model.pkl and can be loaded directly.
+
+The project can be extended to predict market trends or analyze deeper factors influencing customer reviews.
+
+🏆 Credits
+This project uses Olist's public dataset and was developed as a Data Science study for e-commerce. Dataset link: https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce

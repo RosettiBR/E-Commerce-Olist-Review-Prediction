@@ -1,0 +1,35 @@
+(English version at the end)
+
+📖 - O Desafio da Olist
+
+Imagine que você trabalha como cientista de dados na Olist, um grande marketplace que conecta pequenos e médios lojistas a consumidores de todo o Brasil. A empresa vem observando um desafio crescente: algumas avaliações dos clientes sobre seus pedidos são extremamente negativas, enquanto outras são muito positivas. Mas por que isso acontece? Quais fatores influenciam a percepção do consumidor?
+
+Diante disso, sua liderança lhe propôs um desafio: construir um modelo de Machine Learning capaz de prever a avaliação do cliente (review_score) com base nos dados disponíveis. Isso permitirá que a empresa antecipe problemas logísticos e melhore a experiência de compra. Seu objetivo é classificar as avaliações em três categorias:
+
+Ruim (1 ou 2 estrelas)
+
+Neutra (3 estrelas)
+
+Boa (4 ou 5 estrelas)
+
+Com dados reais do Olist, que incluem informações dos pedidos, tempos de entrega, categorias de produto e formas de pagamento, você precisará explorar, limpar e criar variáveis preditoras que possam influenciar as notas dadas pelos consumidores. Em seguida, deverá treinar e avaliar modelos de classificação para prever a satisfação dos clientes e propor insights para otimizar as operações.
+
+Você aceita o desafio? Então vamos começar!
+
+---
+
+📖 - The Olist Challenge
+
+Imagine you work as a data scientist at Olist, a large marketplace that connects small and medium-sized retailers to consumers all over Brazil. The company has been facing a growing challenge: some customer reviews about their orders are extremely negative, while others are very positive. But why does this happen? What factors influence the consumer's perception?
+
+Given this, your leadership has proposed a challenge: build a Machine Learning model capable of predicting the customer review (review_score) based on the available data. This will allow the company to anticipate logistical problems and improve the shopping experience. Your goal is to classify the reviews into three categories:
+
+Bad (1 or 2 stars)
+
+Neutral (3 stars)
+
+Good (4 or 5 stars)
+
+With real Olist data, which includes order information, delivery times, product categories, and payment methods, you will need to explore, clean, and create predictive variables that may influence the scores given by consumers. Then, you should train and evaluate classification models to predict customer satisfaction and propose insights to optimize operations.
+
+Do you accept the challenge? Then let's get started!
